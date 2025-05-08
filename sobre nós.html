@@ -1,544 +1,92 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SOBRE NÓS</title>
-    <link rel="shortcut icon" href="img/LOGO SOUTH COFFE.png" type="imge/x -> icon">
-    <STYLe>
-      html{ 
+    <title>SOUTH COFFEE</title>
+    <link rel="stylesheet" href="css/estilo.css">
 
-margin: 0; 
-
-padding: 0; 
-
-height: 100%; /*Utilizado para o efeito Paralax*/ 
-
-
-
-} 
-
-a{ 
-
- text-decoration: none; 
-
- color:#033313; 
-
-} 
-
-
-
-.m_sobre h1{ 
-
- font-family: 'https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@615&display=swap'; 
-
- font-size: 1.5em; 
-
- line-height: 1.2em; 
-
- color: rgb(13, 66, 13); 
-
- text-align: center; 
-
-} 
-
-.m_sobre p{ 
-
- font-family: 'https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@615&display=swap'; 
-
- font-size: 1em; 
-
- line-height: 1.2em; 
-
- color: rgb(13, 66, 13); 
-
- text-align: justify; 
-
- padding: 20px 40px; 
-
-} 
-
-
-
-.m_sobre img{ 
-
-width: 100%; 
-
-} body 
-
-
-
-.cabe { 
-
-width: 100%; 
-
-height: 100px; 
-
-background-color: #937257; 
-
-font-family:'https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&display=swap' ; 
-
-} 
-
-
-
-input { 
-
-width: 20%; 
-
-height: 30px; 
-
-font-size: 18px; 
-
-margin-bottom: 10px; 
-
-background-color: white; 
-
-border: solid rgb(1, 1, 1) 1.5px; 
-
-border-radius: 10px; 
-
-/*Características para colocar a imagem da Lupa dentro do Input*/ 
-
-background-image: url("../img/lupa.png"); 
-
-background-size: 10%; 
-
-background-repeat: no-repeat; 
-
-background-position: top 5px right 10px; 
-
-padding: 5px; 
-
-/*Características para posição dentro do cabeçalho*/ 
-
-margin-top: 30px; 
-
-margin-right: 20px; 
-
-float: right; 
-
- 
-
-} 
-
-
-
-.logo { 
-
-float: left; 
-
-text-indent: 20px; 
-
-width: 20%; 
-
-} 
-
-/*Características feitas apenas para a lista (ul) dentro da class .cabe*/ 
-
-.cabe ul { 
-
-float: left; 
-
-width: 50%; 
-
-margin: 0px 0px 0px 20px; 
-
-line-height: 100px; 
-
-text-align: center; 
-
-} 
-
-
-
-.cabe ul li { 
-
-text-decoration: none; 
-
-display: inline; /*Torna a lista horizontal*/ 
-
-padding: 40px; 
-
-color:#033313; 
-
-font-family:'https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@615&display=swap'; 
-
-font-size: 1.5em; 
-
-cursor: pointer; 
-
-} 
-
-
-
-.cabe ul li:hover { 
-
-color:#5d7967 
-
-} 
-
-/*Características para imagens de fundo que dão o efeito paralax*/ 
-
-.box1, .box2, .box3, .box4 { 
-
-position: relative; 
-height: 100%; 
-
-   opacity: 0.9; 
-
-   background-repeat: no-repeat; 
-
-   background-size: cover; 
-
-   background-attachment: fixed; 
-
-} 
-
- 
-
-.box1{ 
-
-    background-image: url("img/Gif e Vídeos/Gif Sprint 2.gif"); 
-
-} 
-
- 
-
-.box2{ 
-
-    background-image: url(" img/FUNDO_COFFE3.png"); 
-
-} 
-
- 
-
-.box3{ 
-
-    background-image: url("../img/para.png"); 
-
-} 
-
- 
-
-.box4{ 
-
-    background-image: url("../img/mpb.png"); 
-
-} 
-
- 
-
- 
-
-.conteudo { 
-
-   background-color: #c3c4bf; 
-
-   color: #060807; 
-
-   text-align:left; 
-
-   padding: 100px 50px 100px 50px; 
-
- 
-
-} 
-
-.conteudo p { 
-
-    font-family: 'https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@615&display=swap'; 
-
-    font-size: 1.5em; 
-
-    line-height: 1.2em; 
-
-    color: rgb(13, 66, 13); 
-
-    text-align: justify; 
-
- } 
-
- .conteudo h2{ 
-
-    font-family: 'https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@615&display=swap'; 
-
-    font-size: 1.5em; 
-
-    color: rgb(13, 66, 13); 
-
-    text-align: justify; 
-
-    font-weight: 2em; 
-
-    text-transform: uppercase; 
-
-    text-align: center; 
-
- 
-
- } 
-
- 
-
- 
-
- 
-
-.roda { 
-
-   margin-top: -20px; 
-
-   height: 450px; 
-
-   background-color: #ffd792; 
-
-; 
-
-; 
-
-  /* #bda461 
-
-   #97735c 
-
-   #969f99 
-
-   */ 
-
-} 
-
- 
-
-.roda .down_up { 
-
-   text-align: center; 
-
-   color: rgb(13, 66, 13); 
-
-   font-family: 'https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@615&display=swap'; 
-
-   font-size: 2em; 
-
-} 
-
- 
-
-.roda .down_meio { 
-
-   text-align: center; 
-
-   color: rgb(13, 66, 13); 
-
-   font-family: 'https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@615&display=swap'; 
-
-   font-size: 1.5em; 
-
-   padding: 20px    ; 
-
-  
-
-} 
-
- 
-
-.roda .down_down { 
-
-   text-align: center; 
-
-} 
-
- 
-
-.roda .down_down img { 
-
-   width: 40px; 
-
-   border-radius: 25px; 
-
-   border: 4px rgb(13, 66, 13) dotted; 
-
-   cursor: pointer; 
-
-   margin: 20px; 
-
-   padding: 5px; 
-
-} 
-
-.pessoa{ 
-
-float: left; 
-
-width: 23%; 
-
-margin: 40px 70px; 
-
-border: rgb(77, 133, 80) solid 1px; 
-
-background-color: rgb(51, 126, 73); 
-
-
-
-} 
-
-
-.pessoam{ 
-
-float: center; 
-
-<width:23%; 
-
-margin: 40px 60px; 
-
-border: rgb(158, 158, 98) solid 1px; 
-
-background-color: rgb(126, 95, 51); 
-
-
-
-} 
-
-.pessoa img{ 
-
-width: 100%; 
-
-
-
-} 
-
-
-
-.clear{ 
-
-clear: both; 
-
-} 
-
-
-
-
-    </STYLe>
 </head>
-<body> 
 
-    <div class="cabe"> 
+<body>
+    <div class="cabe">
+        <div class="logo">
+            <img src="">
+        </div>
+        <div>
+            <ul>
+                <a href="index.html">
+                    <li>Início</li>
+                </a>
+                <a href="sobre.html">
+                    <li>Sobre Nós</li>
+                </a>
+                <a href="cardapio.html">
+                    <li>Cardápio</li>
+                </a>
+                <a href="cadastro.html">
+                    <li>Cadastro</li>
+                </a>
+            </ul>
+        </div>
+    
+    </div>
+    <!--INICIO-->
+    <div class="m_sobre">
+        </section>
 
-        <div class="logo"> 
+        <section>
+            <h1>Sobre Nós</h1>
+            <p style="font-size: 1.2em; line-height: 1.4em;">A equipe formada por Michaela, Gabriele e Maria Clara é o coração pulsante da cafeteria South Coffee. Juntas, elas representam o verdadeiro espírito empreendedor: coragem para começar, visão para inovar e determinação para crescer. Cada detalhe da South Coffee carrega o cuidado e a dedicação dessas três mulheres que não apenas sonham, mas realizam com paixão.
 
-            <img src="img/LOGO SOUTH COFFE.png" width="100"> 
 
-        </div> 
-
-        <div> 
-
-            <ul> 
-
-                <a href="home.html"> 
-
-                    <li>Início</li> 
-
-                </a> 
-
-                <a href="sobre nós.html"> 
-
-                    <li>Sobre Nós</li> 
-
-                </a> 
-
-                <a href="cardapio.html"> 
-
-                    <li>Cardápio</li> 
-
-                </a> 
-
-                <a href="cadastro.html"> 
-
-                    <li>Cadastro</li> 
-
-                </a> 
-                <a href="informações de contato.html"><li>Contato Conosco</li></a> 
-            </ul> 
-
-        </div> 
-
-        <input class="pesq" type="text" name="pesq" placeholder="Pesquisar"> 
-
-    </div> 
-
-    <!--INICIO--> 
-
-        <section div class="pessoam"> 
-
-            <h1>Sobre Nós</h1> 
-
-            <p>
-                A equipe formada por Michaela, Gabriele e Maria Clara é o coração pulsante da cafeteria South Coffee. Juntas, elas representam o verdadeiro espírito empreendedor: coragem para começar, visão para inovar e determinação para crescer. Cada detalhe da South Coffee carrega o cuidado e a dedicação dessas três mulheres que não apenas sonham, mas realizam com paixão.<p>
-                <p>
-                Elas transformaram a cafeteria em um espaço acolhedor, onde qualidade, bom gosto e atendimento caminham lado a lado. O comprometimento com a excelência é visível desde a escolha dos grãos até a forma como recebem cada cliente — sempre com um sorriso, atenção e carinho.</p>
-                <p>
+                Elas transformaram a cafeteria em um espaço acolhedor, onde qualidade, bom gosto e atendimento caminham lado a lado. O comprometimento com a excelência é visível desde a escolha dos grãos até a forma como recebem cada cliente — sempre com um sorriso, atenção e carinho.
+                
                 Além disso, o trabalho em equipe é um dos grandes diferenciais do trio. Michaela, Gabriele e Maria Clara se completam com suas habilidades únicas, construindo uma base sólida para um negócio que não para de crescer. São criativas, inovadoras e sempre em busca de oferecer experiências novas e encantadoras a quem passa pela South Coffee.
-                </p>
-                <p>
-                Mais do que empreendedoras, são líderes que inspiram. Com força, sensibilidade e muito profissionalismo, elas mostram que é possível empreender com propósito, autenticidade e sucesso. A South Coffee é reflexo disso — um lugar feito por mulheres que acreditam no poder dos encontros, do café e dos sonhos bem vividos.
+                
+                Mais do que empreendedoras, são líderes que inspiram. Com força, sensibilidade e muito profissionalismo, elas mostram que é possível empreender com propósito, autenticidade e sucesso. A South Coffee é reflexo disso — um lugar feito por mulheres que acreditam no poder dos encontros, do café e dos sonhos bem vividos.</p>
+    </div>
+    <div class="pessoa">
+        <img src="img/gabyfoto1.jpg" height="550px">
+        <h3>Gabriele Batista</h3>
+    </div>
+    <div class="pessoa">
+        <img src="img/gato01.png" height="550px">
+        <h3>Maria Clara</h3>
+    </div>
+    <div class="pessoa">
+        <img src="img/michaelafoto.jpg" height="550px">
+        <h3>Michalea Melo</h3>  
+    </div>
 
-                </p> 
-                </section>
-    </div> 
+
+    <div class="clear"></div>
+    </section>
+
+    </div>
+
+
+    <!--FINAL-->
+
+
+    <div class="roda">
         <br><br><br>
-    <div class="pessoa"> 
 
-        <img src="img/gabyfoto1.jpg"> 
+        <div class="down_up">Café com amor e um toque de cafuné<br>#SOUTHCOFFEE</div>
+        <div class="down_meio">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.30030467103!2d-49.629265824863175!3d-22.902291779258277!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c06a376d221239%3A0x92ee16dc0bc8105f!2zRXNwYcOnbyBDYWbDqQ!5e0!3m2!1spt-BR!2sbr!4v1746642319958!5m2!1spt-BR!2sbr"
+                width="300" height="150" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="down_down">
+            <a href="https://pt-br.facebook.com/" target="_blank"><img src="img/face_logo_02.png"></a>
+            <a href="https://web.whatsapp.com/" target="_blank"><img src="img/whats_logo_01.png"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="img/inst_logo_01.png"></a>
 
-        <h3>Gabriele Batista</h3> 
+        </div>
+    </div>
+</body>
 
-        <p>Frase</p> 
-
-    </div> 
-
-    <div class="pessoa"> 
-
-        <img src="img/gato01.png"> 
-
-        <h3>Maria Clara</h3> 
-
-        <p>Frase</p> 
-
-    </div> 
-
-    <div class="pessoa"> 
-
-        <img src="img/michaelafoto.jpg"> 
-
-        <h3>Michaela Melo</h3> 
-
-        <p>Frase</p> 
-
-    </div> 
-
-    <div class="clear"></div> 
-    </section> 
-    </div> 
-    <!--FINAL--> 
-    <div class="roda"> 
-        <br><br><br> 
-        <div class="down_up">Café com amor e um toque de cafuné<br>#SOUTHCOFFEE</div> 
-        <div class="down_meio"> 
-            <iframe 
-
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.30030467103!2d-49.629265824863175!3d-22.902291779258277!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c06a376d221239%3A0x92ee16dc0bc8105f!2zRXNwYcOnbyBDYWbDqQ!5e0!3m2!1spt-BR!2sbr!4v1746642319958!5m2!1spt-BR!2sbr" 
-
-                width="300" height="150" style="border:0;" allowfullscreen="" loading="lazy" 
-                referrerpolicy="no-referrer-when-downgrade"></iframe> 
-
-        </div> 
-
-        <div class="down_down"> 
-            <a href="https://pt-br.facebook.com/" target="_blank"><img src="img/face_logo_02.png"></a> 
-
-            <a href="https://web.whatsapp.com/" target="_blank"><img src="img/whats_logo_01.png"></a> 
-
-            <a href="https://www.instagram.com/" target="_blank"><img src="img/inst_logo_01.png"></a> 
-        </div> 
-    </div> 
-</body> 
-</html> 
+</html>
