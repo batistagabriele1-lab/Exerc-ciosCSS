@@ -1,0 +1,512 @@
+<!DOCTYPE html> 
+
+<html lang="pt-br"> 
+
+<head> 
+
+    <meta charset="UTF-8"> 
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+    <title>SOUTH COFFEE</title> 
+
+    <link rel="stylesheet" href="css/estilo.css"> 
+<style>
+html{ 
+
+margin: 0; 
+
+padding: 0; 
+
+height: 100%; /*Utilizado para o efeito Paralax*/ 
+
+
+
+} 
+
+a{ 
+
+ text-decoration: none; 
+
+ color:#033313; 
+
+} 
+
+
+
+.m_sobre h1{ 
+
+ font-family: 'https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@615&display=swap'; 
+
+ font-size: 1.5em; 
+
+ line-height: 1.2em; 
+
+ color: rgb(13, 66, 13); 
+
+ text-align: center; 
+
+} 
+
+.m_sobre p{ 
+
+ font-family: 'https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@615&display=swap'; 
+
+ font-size: 1em; 
+
+ line-height: 1.2em; 
+
+ color: rgb(13, 66, 13); 
+
+ text-align: justify; 
+
+ padding: 20px 40px; 
+
+} 
+
+
+
+.m_sobre img{ 
+
+width: 100%; 
+
+} body 
+
+
+
+.cabe { 
+
+width: 100%; 
+
+height: 100px; 
+
+background-color: #937257; 
+
+font-family:'https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&display=swap' ; 
+
+} 
+
+
+
+c 
+
+
+
+.logo { 
+
+float: left; 
+
+text-indent: 20px; 
+
+width: 20%; 
+
+} 
+
+/*Características feitas apenas para a lista (ul) dentro da class .cabe*/ 
+
+.cabe ul { 
+
+float: left; 
+
+width: 50%; 
+
+margin: 0px 0px 0px 20px; 
+
+line-height: 100px; 
+
+text-align: center; 
+
+} 
+
+
+
+.cabe ul li { 
+
+text-decoration: none; 
+
+display: inline; /*Torna a lista horizontal*/ 
+
+padding: 40px; 
+
+color:#033313; 
+
+font-family:'https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@615&display=swap'; 
+
+font-size: 1.5em; 
+
+cursor: pointer; 
+
+} 
+
+
+
+.cabe ul li:hover { 
+
+color:#5d7967 
+
+} 
+
+/*Características para imagens de fundo que dão o efeito paralax*/ 
+
+.box1, .box2, .box3, .box4 { 
+
+position: relative; 
+
+height: 100%; 
+
+opacity: 0.9; 
+
+background-repeat: no-repeat; 
+
+background-size: cover; 
+
+background-attachment: fixed; 
+
+} 
+
+
+
+.box1{ 
+
+ background-image: url("img/Gif e Vídeos/Gif Sprint 2.gif"); 
+
+} 
+
+
+
+.box2{ 
+
+ background-image: url(" img/FUNDO_COFFE3.png"); 
+
+} 
+
+
+
+.box3{ 
+
+ background-image: url("../img/para.png"); 
+
+} 
+
+
+.box4{ 
+
+background-image: url("../img/mpb.png"); 
+
+} 
+
+
+
+
+
+.conteudo { 
+
+background-color: #c3c4bf; 
+
+color: #060807; 
+
+text-align:left; 
+
+padding: 100px 50px 100px 50px; 
+
+
+
+} 
+
+.conteudo p { 
+
+font-family: 'https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@615&display=swap'; 
+
+font-size: 1.5em; 
+
+line-height: 1.2em; 
+
+color: rgb(13, 66, 13); 
+
+text-align: justify; 
+
+} 
+
+.conteudo h2{ 
+
+font-family: 'https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@615&display=swap'; 
+
+font-size: 1.5em; 
+
+color: rgb(13, 66, 13); 
+
+text-align: justify; 
+
+font-weight: 2em; 
+
+text-transform: uppercase; 
+
+text-align: center; 
+
+
+
+} 
+
+
+
+
+
+
+
+.roda { 
+
+margin-top: -20px; 
+
+height: 450px; 
+
+background-color: #ffd792; 
+
+; 
+
+; 
+
+/* #bda461 
+
+#97735c 
+
+#969f99 
+
+*/ 
+
+} 
+
+
+
+.roda .down_up { 
+
+text-align: center; 
+
+color: rgb(13, 66, 13); 
+
+font-family: 'https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@615&display=swap'; 
+
+font-size: 2em; 
+
+} 
+
+
+
+.roda .down_meio { 
+
+text-align: center; 
+
+color: rgb(13, 66, 13); 
+
+font-family: 'https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@615&display=swap'; 
+
+font-size: 1.5em; 
+
+padding: 20px    ; 
+
+
+
+} 
+
+
+
+.roda .down_down { 
+
+text-align: center; 
+
+} 
+
+
+
+.roda .down_down img { 
+
+width: 40px; 
+
+border-radius: 25px; 
+
+border: 4px rgb(13, 66, 13) dotted; 
+
+cursor: pointer; 
+
+margin: 20px; 
+
+padding: 5px; 
+
+} 
+
+
+
+.pessoa{ 
+
+float: left; 
+
+width: 23%; 
+
+margin: 40px 12px; 
+
+border: red solid 1px; 
+
+background-color: aqua; 
+
+
+
+} 
+
+
+
+.pessoa img{ 
+
+width: 100%; 
+
+
+
+} 
+
+
+
+.clear{ 
+
+clear: both; 
+
+} 
+
+
+
+
+</style>
+    
+
+</head> 
+
+<body> 
+
+    <div class="cabe"> 
+
+        <div class="logo"> 
+
+            <img src="img/LOGO SOUTH COFFE.png"> 
+
+        </div> 
+
+        <div> 
+
+            <ul> 
+
+                <a href="index.html"><li>Home</li></a>  
+
+                <a href="C:\Users\2ºANO\Documents\GitHub\Exerc-ciosCSS\sobre nós.html"><li>Sobre Nós</li></a>  
+
+                <a href="cardapio.html"><li>Cardápio</li></a>  
+
+                <a href="cadastro.html"><li>Contato Conosco</li></a> 
+                <a href="informações de contato.html"><li>Contato Conosco</li></a> 
+            </ul> 
+
+        </div> 
+
+        <input class="pesq" type="text" name="pesq" placeholder="Pesquisar"> 
+
+    </div> 
+
+ 
+
+ 
+
+    <div class="box1"></div> 
+
+    <div class="conteudo"> 
+
+        <h2>South Coffee</h2> 
+
+        <p>A South Cooffee é muito mais do que uma simples cafeteria — é um ponto de encontro acolhedor onde o aroma do café fresco se mistura ao charme de um ambiente cuidadosamente pensado para receber todos com conforto e simpatia. Localizada em um espaço convidativo, a cafeteria se destaca pela qualidade dos grãos selecionados, extraídos com maestria por baristas atenciosos que entendem a arte de preparar uma boa xícara. 
+
+ 
+
+            Com um cardápio que vai além do café tradicional, a South Cooffee oferece desde expressos intensos até bebidas autorais e opções geladas, acompanhadas por doces artesanais e lanches leves preparados com ingredientes frescos. Cada detalhe, da decoração ao atendimento, transmite a paixão pelo café e pelo bem-estar dos clientes. 
+
+             
+
+            Frequentada por quem busca um refúgio tranquilo no meio da rotina ou um espaço ideal para conversas e encontros, a South Cooffee conquistou seu lugar no coração de quem valoriza qualidade, sabor e boas experiências.</p> 
+
+    </div> 
+
+    <div class="box2"> 
+
+        </div> 
+
+    <div class="conteudo"> 
+
+        <h2>Nossa História</h2> 
+
+       <p>Fundada há dois anos, a South Cooffee nasceu do sonho de criar um espaço onde o café fosse mais do que uma bebida — fosse uma experiência. Desde o primeiro dia, nosso propósito foi oferecer um ambiente acolhedor, com cafés de alta qualidade e um atendimento que fizesse cada pessoa se sentir em casa. 
+
+ 
+
+        Começamos com uma pequena equipe, muita paixão e o desejo de fazer diferente. Em pouco tempo, conquistamos o carinho dos nossos clientes com receitas exclusivas, grãos selecionados e aquele toque artesanal que faz toda a diferença. Aos poucos, crescemos — mas sem perder a essência: servir com amor, atenção aos detalhes e respeito por cada história que entra pela nossa porta. 
+
+         
+
+        Hoje, após dois anos de história, a South Cooffee se tornou referência na região, um ponto de encontro para conversas, trabalho, descanso e, claro, bons cafés. Seguimos inovando, ouvindo nossos clientes e buscando sempre surpreender, sem abrir mão do que nos trouxe até aqui: qualidade, acolhimento e paixão pelo que fazemos. 
+
+         
+
+        O melhor ainda está por vir! 
+
+        </p> 
+
+    </div> 
+
+    <div class="box3"> 
+
+    </div> 
+
+    <div class="conteudo"> 
+
+        <h2>Presente</h2> 
+
+        <p> Desde o dia 03 de maio de 2023, a South Cooffee vem construindo uma história baseada em sabor, acolhimento e conexão. Cada xícara servida representa nossa dedicação em criar momentos únicos para quem nos visita — seja para um café rápido ou para longas conversas em um ambiente tranquilo e convidativo. 
+
+ 
+
+            Ao longo desses dois anos, crescemos junto com nossos clientes. E como parte dessa evolução, damos um novo passo: lançamos nosso site oficial! Agora ficou muito mais fácil e rápido conhecer tudo o que a South Cooffee tem a oferecer, fazer seus pedidos online, realizar cadastros e acompanhar nossas novidades de onde estiver. 
+
+             
+
+            Essa novidade é só o começo. Continuamos com o mesmo propósito: servir com qualidade, carinho e inovação. Seja bem-vindo a essa nova fase da South Cooffee — o seu café, agora ainda mais perto de você.</p> 
+
+    </div> 
+
+    <div class="box4"> 
+
+    </div> 
+
+    <div class="roda"> 
+
+        <br><br><br> 
+
+         
+
+        <div class="down_up">Café com amor e um toque de cafuné<br>#SOUTHCOFFEE</div> 
+
+        <div class="down_meio"> 
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.30030467103!2d-49.629265824863175!3d-22.902291779258277!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c06a376d221239%3A0x92ee16dc0bc8105f!2zRXNwYcOnbyBDYWbDqQ!5e0!3m2!1spt-BR!2sbr!4v1746642319958!5m2!1spt-BR!2sbr" width="300" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+
+        </div> 
+
+        <div class="down_down"> 
+
+            <a href="https://pt-br.facebook.com/" target="_blank"><img src="img/face_logo_02.png"></a> 
+
+            <a href="https://web.whatsapp.com/" target="_blank"><img src="img/whats_logo_01.png"></a> 
+
+            <a href="https://www.instagram.com/" target="_blank"><img src="img/inst_logo_01.png"></a> 
+
+             
+
+        </div> 
+
+    </div> 
+
+</body> 
+
+</html> 
