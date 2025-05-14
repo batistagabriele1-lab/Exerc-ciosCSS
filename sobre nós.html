@@ -6,13 +6,421 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SOUTH COFFEE</title>
     <link rel="stylesheet" href="css/estilo.css">
+<STYle>
+       html{ 
 
+margin: 0; 
+
+padding: 0; 
+
+height: 100%; /*Utilizado para o efeito Paralax*/ 
+
+
+
+} 
+
+a{ 
+
+ text-decoration: none; 
+
+ color:#033313; 
+
+} 
+
+
+
+.m_sobre h1{ 
+
+ font-family: 'https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@615&display=swap'; 
+
+ font-size: 1.5em; 
+
+ line-height: 1.2em; 
+
+ color: rgb(13, 66, 13); 
+
+ text-align: center; 
+
+} 
+
+.m_sobre p{ 
+
+ font-family: 'https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@615&display=swap'; 
+
+ font-size: 1em; 
+
+ line-height: 1.2em; 
+
+ color: rgb(13, 66, 13); 
+
+ text-align: justify; 
+
+ padding: 20px 40px; 
+
+} 
+
+
+
+.m_sobre img{ 
+
+width: 100%; 
+
+} body 
+
+
+
+.cabe { 
+
+width: 100%; 
+
+height: 100px; 
+
+background-color: #937257; 
+
+font-family:'https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&display=swap' ; 
+
+} 
+
+
+
+input { 
+
+width: 20%; 
+
+height: 30px; 
+
+font-size: 18px; 
+
+margin-bottom: 10px; 
+
+background-color: white; 
+
+border: solid rgb(1, 1, 1) 1.5px; 
+
+border-radius: 10px; 
+
+/*Características para colocar a imagem da Lupa dentro do Input*/ 
+
+background-image: url("../img/lupa.png"); 
+
+background-size: 10%; 
+
+background-repeat: no-repeat; 
+
+background-position: top 5px right 10px; 
+
+padding: 5px; 
+
+/*Características para posição dentro do cabeçalho*/ 
+
+margin-top: 30px; 
+
+margin-right: 20px; 
+
+float: right; 
+
+ 
+
+} 
+
+
+
+.logo { 
+
+float: left; 
+
+text-indent: 20px; 
+
+width: 20%; 
+
+} 
+
+/*Características feitas apenas para a lista (ul) dentro da class .cabe*/ 
+
+.cabe ul { 
+
+float: left; 
+
+width: 50%; 
+
+margin: 0px 0px 0px 20px; 
+
+line-height: 100px; 
+
+text-align: center; 
+
+} 
+
+
+
+.cabe ul li { 
+
+text-decoration: none; 
+
+display: inline; /*Torna a lista horizontal*/ 
+
+padding: 40px; 
+
+color:#033313; 
+
+font-family:'https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@615&display=swap'; 
+
+font-size: 1.5em; 
+
+cursor: pointer; 
+
+} 
+
+
+
+.cabe ul li:hover { 
+
+color:#5d7967 
+
+} 
+
+/*Características para imagens de fundo que dão o efeito paralax*/ 
+
+.box1, .box2, .box3, .box4 { 
+
+position: relative; 
+height: 100%; 
+
+   opacity: 0.9; 
+
+   background-repeat: no-repeat; 
+
+   background-size: cover; 
+
+   background-attachment: fixed; 
+
+} 
+
+ 
+
+.box1{ 
+
+    background-image: url("img/Gif e Vídeos/Gif Sprint 2.gif"); 
+
+} 
+
+ 
+
+.box2{ 
+
+    background-image: url(" img/FUNDO_COFFE3.png"); 
+
+} 
+
+ 
+
+.box3{ 
+
+    background-image: url("../img/para.png"); 
+
+} 
+
+ 
+
+.box4{ 
+
+    background-image: url("../img/mpb.png"); 
+
+} 
+
+ 
+
+ 
+
+.conteudo { 
+
+   background-color: #c3c4bf; 
+
+   color: #060807; 
+
+   text-align:left; 
+
+   padding: 100px 50px 100px 50px; 
+
+ 
+
+} 
+
+.conteudo p { 
+
+    font-family: 'https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@615&display=swap'; 
+
+    font-size: 1.5em; 
+
+    line-height: 1.2em; 
+
+    color: rgb(13, 66, 13); 
+
+    text-align: justify; 
+
+ } 
+
+ .conteudo h2{ 
+
+    font-family: 'https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@615&display=swap'; 
+
+    font-size: 1.5em; 
+
+    color: rgb(13, 66, 13); 
+
+    text-align: justify; 
+
+    font-weight: 2em; 
+
+    text-transform: uppercase; 
+
+    text-align: center; 
+
+ 
+
+ } 
+
+ 
+
+ 
+
+ 
+
+.roda { 
+
+   margin-top: -20px; 
+
+   height: 450px; 
+
+   background-color: #ffd792; 
+
+; 
+
+; 
+
+  /* #bda461 
+
+   #97735c 
+
+   #969f99 
+
+   */ 
+
+} 
+
+ 
+
+.roda .down_up { 
+
+   text-align: center; 
+
+   color: rgb(13, 66, 13); 
+
+   font-family: 'https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@615&display=swap'; 
+
+   font-size: 2em; 
+
+} 
+
+ 
+
+.roda .down_meio { 
+
+   text-align: center; 
+
+   color: rgb(13, 66, 13); 
+
+   font-family: 'https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@615&display=swap'; 
+
+   font-size: 1.5em; 
+
+   padding: 20px    ; 
+
+  
+
+} 
+
+ 
+
+.roda .down_down { 
+
+   text-align: center; 
+
+} 
+
+ 
+
+.roda .down_down img { 
+
+   width: 40px; 
+
+   border-radius: 25px; 
+
+   border: 4px rgb(13, 66, 13) dotted; 
+
+   cursor: pointer; 
+
+   margin: 20px; 
+
+   padding: 5px; 
+
+} 
+
+.pessoa{ 
+
+float: left; 
+
+width: 23%; 
+
+margin: 40px 70px; 
+
+border: rgb(77, 133, 80) solid 1px; 
+
+background-color: rgb(51, 126, 73); 
+
+
+
+} 
+
+
+.pessoam{ 
+
+float: center; 
+
+<width:23%; 
+
+margin: 40px 60px; 
+
+border: rgb(158, 158, 98) solid 1px; 
+
+background-color: rgb(126, 95, 51); 
+
+
+
+} 
+
+.pessoa img{ 
+
+width: 100%; 
+
+
+
+} 
+
+
+
+.clear{ 
+
+clear: both; 
+
+} 
+</STYle>
 </head>
 
 <body>
     <div class="cabe">
         <div class="logo">
-            <img src="">
+            <img src="img/LOGO SOUTH COFFE.png" width="100">
         </div>
         <div>
             <ul>
@@ -30,7 +438,7 @@
                 </a>
             </ul>
         </div>
-    
+          <input class="pesq" type="text" name="pesq" placeholder="Pesquisar"> 
     </div>
     <!--INICIO-->
     <div class="m_sobre">
@@ -87,6 +495,7 @@
 
         </div>
     </div>
+    
 </body>
 
 </html>
