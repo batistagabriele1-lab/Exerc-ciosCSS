@@ -1,467 +1,461 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Informaçôes de contato</title>
     <link rel="shortcut icon" href="img/LOGO SOUTH COFFE.png" type="imge/x -> icon">
     <style>
-           html{ 
+        html {
 
-margin: 0; 
+            margin: 0;
 
-padding: 0; 
+            padding: 0;
 
-height: 100%; /*Utilizado para o efeito Paralax*/ 
+            height: 100%;
+            /*Utilizado para o efeito Paralax*/
 
 
 
-} 
+        }
 
-a{ 
+        a {
 
- text-decoration: none; 
+            text-decoration: none;
 
- color:#033313; 
+            color: #033313;
 
-} 
+        }
 
 
 
-.m_sobre h1{ 
+        .m_sobre h1 {
 
- font-family: 'https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@615&display=swap'; 
+            font-family: 'https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@615&display=swap';
 
- font-size: 1.5em; 
+            font-size: 1.5em;
 
- line-height: 1.2em; 
+            line-height: 1.2em;
 
- color: rgb(13, 66, 13); 
+            color: rgb(13, 66, 13);
 
- text-align: center; 
+            text-align: center;
 
-} 
+        }
 
-.m_sobre p{ 
+        .m_sobre p {
 
- font-family: 'https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@615&display=swap'; 
+            font-family: 'https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@615&display=swap';
 
- font-size: 1em; 
+            font-size: 1em;
 
- line-height: 1.2em; 
+            line-height: 1.2em;
 
- color: rgb(13, 66, 13); 
+            color: rgb(13, 66, 13);
 
- text-align: justify; 
+            text-align: justify;
 
- padding: 20px 40px; 
+            padding: 20px 40px;
 
-} 
+        }
 
 
 
-.m_sobre img{ 
+        .m_sobre img {
 
-width: 100%; 
+            width: 100%;
 
-} body 
+        }
 
+        body .cabe {
 
+            width: 100%;
 
-.cabe { 
+            height: 100px;
 
-width: 100%; 
+            background-color: #937257;
 
-height: 100px; 
+            font-family: 'https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&display=swap';
 
-background-color: #937257; 
+        }
 
-font-family:'https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&display=swap' ; 
 
-} 
 
+        input {
 
+            width: 20%;
 
-input { 
+            height: 30px;
 
-width: 20%; 
+            font-size: 18px;
 
-height: 30px; 
+            margin-bottom: 10px;
 
-font-size: 18px; 
+            background-color: white;
 
-margin-bottom: 10px; 
+            border: solid rgb(1, 1, 1) 1.5px;
 
-background-color: white; 
+            border-radius: 10px;
 
-border: solid rgb(1, 1, 1) 1.5px; 
+            /*Características para colocar a imagem da Lupa dentro do Input*/
 
-border-radius: 10px; 
+            background-image: url("../img/lupa.png");
 
-/*Características para colocar a imagem da Lupa dentro do Input*/ 
+            background-size: 10%;
 
-background-image: url("../img/lupa.png"); 
+            background-repeat: no-repeat;
 
-background-size: 10%; 
+            background-position: top 5px right 10px;
 
-background-repeat: no-repeat; 
+            padding: 5px;
 
-background-position: top 5px right 10px; 
+            /*Características para posição dentro do cabeçalho*/
 
-padding: 5px; 
+            margin-top: 30px;
 
-/*Características para posição dentro do cabeçalho*/ 
+            margin-right: 20px;
 
-margin-top: 30px; 
+            float: right;
 
-margin-right: 20px; 
 
-float: right; 
 
- 
+        }
 
-} 
 
 
+        .logo {
 
-.logo { 
+            float: left;
 
-float: left; 
+            text-indent: 20px;
 
-text-indent: 20px; 
+            width: 20%;
 
-width: 20%; 
+        }
 
-} 
+        /*Características feitas apenas para a lista (ul) dentro da class .cabe*/
 
-/*Características feitas apenas para a lista (ul) dentro da class .cabe*/ 
+        .cabe ul {
 
-.cabe ul { 
+            float: left;
 
-float: left; 
+            width: 50%;
 
-width: 50%; 
+            margin: 0px 0px 0px 20px;
 
-margin: 0px 0px 0px 20px; 
+            line-height: 100px;
 
-line-height: 100px; 
+            text-align: center;
 
-text-align: center; 
+        }
 
-} 
 
 
+        .cabe ul li {
 
-.cabe ul li { 
+            text-decoration: none;
 
-text-decoration: none; 
+            display: inline;
+            /*Torna a lista horizontal*/
 
-display: inline; /*Torna a lista horizontal*/ 
+            padding: 40px;
 
-padding: 40px; 
+            color: #033313;
 
-color:#033313; 
+            font-family: 'https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@615&display=swap';
 
-font-family:'https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@615&display=swap'; 
+            font-size: 1.5em;
 
-font-size: 1.5em; 
+            cursor: pointer;
 
-cursor: pointer; 
+        }
 
-} 
 
 
+        .cabe ul li:hover {
 
-.cabe ul li:hover { 
+            color: #5d7967
+        }
 
-color:#5d7967 
+        /*Características para imagens de fundo que dão o efeito paralax*/
 
-} 
+        .box1,
+        .box2,
+        .box3,
+        .box4 {
 
-/*Características para imagens de fundo que dão o efeito paralax*/ 
+            position: relative;
+            height: 100%;
 
-.box1, .box2, .box3, .box4 { 
+            opacity: 0.9;
 
-position: relative; 
-height: 100%; 
+            background-repeat: no-repeat;
 
-   opacity: 0.9; 
+            background-size: cover;
 
-   background-repeat: no-repeat; 
+            background-attachment: fixed;
 
-   background-size: cover; 
+        }
 
-   background-attachment: fixed; 
 
-} 
+        .box1 {
+            
+            background-image: url("img/cafeteria real.jpg");
 
- 
+        }
 
-.box1{ 
 
-    background-image: url("img/Gif e Vídeos/Gif Sprint 2.gif"); 
 
-} 
+        .box2 {
 
- 
+            background-image: url(" img/FUNDO_COFFE3.png");
 
-.box2{ 
+        }
 
-    background-image: url(" img/FUNDO_COFFE3.png"); 
 
-} 
 
- 
+        .box3 {
 
-.box3{ 
+            background-image: url("../img/para.png");
 
-    background-image: url("../img/para.png"); 
+        }
 
-} 
 
- 
 
-.box4{ 
+        .box4 {
 
-    background-image: url("../img/mpb.png"); 
+            background-image: url("../img/mpb.png");
 
-} 
+        }
 
- 
 
- 
 
-.conteudo { 
 
-   background-color: #c3c4bf; 
 
-   color: #060807; 
+        .conteudo p {
 
-   text-align:left; 
+            font-family: 'https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@615&display=swap';
 
-   padding: 100px 50px 100px 50px; 
+            font-size: 1.5em;
 
- 
+            line-height: 1.2em;
 
-} 
+            color: rgb(13, 66, 13);
 
-.conteudo p { 
+            text-align: justify;
 
-    font-family: 'https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@615&display=swap'; 
+        }
 
-    font-size: 1.5em; 
+        .conteudo h2 {
 
-    line-height: 1.2em; 
+            font-family: 'https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@615&display=swap';
 
-    color: rgb(13, 66, 13); 
+            font-size: 1.5em;
 
-    text-align: justify; 
+            color: rgb(13, 66, 13);
 
- } 
+            text-align: justify;
 
- .conteudo h2{ 
+            font-weight: 2em;
 
-    font-family: 'https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@615&display=swap'; 
+            text-transform: uppercase;
 
-    font-size: 1.5em; 
+            text-align: center;
 
-    color: rgb(13, 66, 13); 
 
-    text-align: justify; 
 
-    font-weight: 2em; 
+        }
 
-    text-transform: uppercase; 
 
-    text-align: center; 
 
- 
 
- } 
 
- 
 
- 
 
- 
+        .roda {
 
-.roda { 
+            margin-top: -20px;
 
-   margin-top: -20px; 
+            height: 450px;
 
-   height: 450px; 
+            background-color: #ffd792;
 
-   background-color: #ffd792; 
+            ;
 
-; 
+            ;
 
-; 
-
-  /* #bda461 
+            /* #bda461 
 
    #97735c 
 
    #969f99 
 
-   */ 
+   */
 
-} 
-
- 
-
-.roda .down_up { 
-
-   text-align: center; 
-
-   color: rgb(13, 66, 13); 
-
-   font-family: 'https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@615&display=swap'; 
-
-   font-size: 2em; 
-
-} 
-
- 
-
-.roda .down_meio { 
-
-   text-align: center; 
-
-   color: rgb(13, 66, 13); 
-
-   font-family: 'https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@615&display=swap'; 
-
-   font-size: 1.5em; 
-
-   padding: 20px    ; 
-
-  
-
-} 
-
- 
-
-.roda .down_down { 
-
-   text-align: center; 
-
-} 
-
- 
-
-.roda .down_down img { 
-
-   width: 40px; 
-
-   border-radius: 25px; 
-
-   border: 4px rgb(13, 66, 13) dotted; 
-
-   cursor: pointer; 
-
-   margin: 20px; 
-
-   padding: 5px; 
-
-} 
-
-.pessoa{ 
-
-float: left; 
-
-width: 23%; 
-
-margin: 40px 70px; 
-
-border: rgb(77, 133, 80) solid 1px; 
-
-background-color: rgb(51, 126, 73); 
+        }
 
 
 
-} 
+        .roda .down_up {
 
+            text-align: center;
 
-.pessoam{ 
+            color: rgb(13, 66, 13);
 
-float: center; 
+            font-family: 'https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@615&display=swap';
 
-<width:23%; 
+            font-size: 2em;
 
-margin: 40px 60px; 
-
-border: rgb(158, 158, 98) solid 1px; 
-
-background-color: rgb(126, 95, 51); 
+        }
 
 
 
-} 
+        .roda .down_meio {
 
-.pessoa img{ 
+            text-align: center;
 
-width: 100%; 
+            color: rgb(13, 66, 13);
+
+            font-family: 'https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@615&display=swap';
+
+            font-size: 1.5em;
+
+            padding: 20px;
 
 
 
-} 
+        }
 
 
 
-.clear{ 
+        .roda .down_down {
 
-clear: both; 
+            text-align: center;
 
-} 
-    .box1{ 
+        }
 
-    background-image: url("img/Gif e Vídeos/Gif Sprint 2.gif"); 
 
-} 
-          
+
+        .roda .down_down img {
+
+            width: 40px;
+
+            border-radius: 25px;
+
+            border: 4px rgb(13, 66, 13) dotted;
+
+            cursor: pointer;
+
+            margin: 20px;
+
+            padding: 5px;
+
+        }
+
+        .pessoa {
+
+            float: left;
+
+            width: 23%;
+
+            margin: 40px 70px;
+
+            border: rgb(77, 133, 80) solid 1px;
+
+            background-color: rgb(51, 126, 73);
+
+
+
+        }
+
+
+        .pessoam {
+
+            float: center;
+
+            width: 23%;
+
+            margin: 40px 60px;
+
+            border: rgb(158, 158, 98) solid 1px;
+
+            background-color: rgb(126, 95, 51);
+
+
+
+        }
+
+        .pessoa img {
+
+            width: 100%;
+
+
+
+        }
+
+
+
+        .clear {
+
+            clear: both;
+
+        }
+
         .cont-img {
             position: absolute;
             top: 45%;
             width: 100%;
             text-align: center;
         }
-        .Bbp{
+
+        .Bbp {
             text-align: center;
-            background-color: #ffffff;
+
             color: rgb(14, 119, 51);
+
         }
+
         .p {
             text-align: center;
             background-color: #ffffff;
             color: rgb(14, 119, 51);
         }
-       .conteudo { 
 
-   background-color: #c3c4bf; 
+        .conteudo {
 
-   color: #060807; 
+            background-color: #c3c4bf;
+            color: #060807;
+            text-align: left;
+            padding: 100px 50px 100px 50px;
+            width: 80%;
+            margin: auto;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            border-radius: 15px;
+     
+        }
 
-   text-align:left; 
 
-   padding: 100px 50px 100px 50px; 
 
- 
-
-          .button{
-            background-color: rgb(51, 126, 73); 
+        .button {
+            background-color: rgb(51, 126, 73);
             position: right;
-        
-          }
 
-        
+        }
+        .teste p{
+            text-align: center;
+        }
     </style>
 </head>
+
 <body>
     <div class="cabe">
         <div class="logo">
             <img src="img/LOGO SOUTH COFFE.png" width="100">
         </div>
         <div>
+            
             <ul>
                 <a href="index.html">
                     <li>Início</li>
@@ -477,54 +471,55 @@ clear: both;
                 </a>
             </ul>
         </div>
-          <input class="pesq" type="text" name="pesq" placeholder="Pesquisar"> 
+        <input class="pesq" type="text" name="pesq" placeholder="Pesquisar">
     </div>
     <!--INICIO-->
     <div class="box1">
 
-    </div> 
+    </div>
 
-    <div class="conteudo"> 
+    <div class="conteudo">
         <div class="Bbp">
-            <div class>
-                <h2>South Coffee</h2> 
+            <div class="teste">
+                <h2>South Coffee</h2>
 
-        <p><B>Entre em conatato conosco</B>
-        <b> EMAIL📧</b>
-        <p>TEM ALGUMA DÚVIDA?</p>
-        <p> SOUTHCOFFE@ICLOUD.COM</p>
-        <BR>
-            <b>TELEFONE 📞</b>
-            <p>VOCÊ PODE LIGAR A QUALQUER MOMENTO.</p>
-            <p>(14) 3372-1718 OU (14) 98969-4743</p>
-            <br>
-            <b>INSTAGRAM 📷</b>
-            <p>NOS ACOMPANHE NA NOSSA REDE SOCIAL!</p>
-            <p>@SOUTH_COFFE</p>
-        </div>
-      <section>
-        <br>
-     <div>
-         <button class="button">  <a href="cadastro.html">
-                    <p>Cadastro</p>
-                </a></button>
-     </div>
-     <br><br><br><br><br>
-         <div class="roda">
-        <br><br><br>
+                <p>Entre em conatato conosco</p>
+                    <b> EMAIL📧</b>
+                <p>TEM ALGUMA DÚVIDA?</p>
+                <p> SOUTHCOFFE@ICLOUD.COM</p>
+                <BR>
+                <b>TELEFONE 📞</b>
+                <p>VOCÊ PODE LIGAR A QUALQUER MOMENTO.</p>
+                <p>(14) 3372-1718 OU (14) 98969-4743</p>
+                <br>
+                <b>INSTAGRAM 📷</b>
+                <p>NOS ACOMPANHE NA NOSSA REDE SOCIAL!</p>
+                <p>@SOUTH_COFFE</p>
+            </div>
+            <section>
+                <br>
+                <div>
+                    <button class="button"> <a href="cadastro.html">
+                            <p>Cadastro</p>
+                        </a></button>
+                </div>
+                <br><br><br><br><br>
+                <div class="roda">
+                    <br><br><br>
 
-        <div class="down_up">Café com amor e um toque de cafuné<br>#SOUTHCOFFEE</div>
-        <div class="down_meio">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.30030467103!2d-49.629265824863175!3d-22.902291779258277!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c06a376d221239%3A0x92ee16dc0bc8105f!2zRXNwYcOnbyBDYWbDqQ!5e0!3m2!1spt-BR!2sbr!4v1746642319958!5m2!1spt-BR!2sbr"
-                width="300" height="150" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-        <div class="down_down">
-            <a href="https://pt-br.facebook.com/" target="_blank"><img src="img/face_logo_02.png"></a>
-            <a href="https://web.whatsapp.com/" target="_blank"><img src="img/whats_logo_01.png"></a>
-            <a href="https://www.instagram.com/" target="_blank"><img src="img/inst_logo_01.png"></a>
+                    <div class="down_up">Um carinho e um café quentinho tem sabor de felicidade<br>#SOUTHCOFFEE</div>
+                    <div class="down_meio">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.30030467103!2d-49.629265824863175!3d-22.902291779258277!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c06a376d221239%3A0x92ee16dc0bc8105f!2zRXNwYcOnbyBDYWbDqQ!5e0!3m2!1spt-BR!2sbr!4v1746642319958!5m2!1spt-BR!2sbr"
+                            width="300" height="150" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="down_down">
+                        <a href="https://pt-br.facebook.com/" target="_blank"><img src="img/face_logo_02.png"></a>
+                        <a href="https://web.whatsapp.com/" target="_blank"><img src="img/whats_logo_01.png"></a>
+                        <a href="https://www.instagram.com/" target="_blank"><img src="img/inst_logo_01.png"></a>
 
-        </div>
-            </body>
-            </html>
+                    </div>
+</body>
+
+</html>
