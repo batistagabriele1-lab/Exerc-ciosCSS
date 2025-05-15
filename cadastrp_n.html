@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOUTH COFFEE</title>
+    <link rel="stylesheet" href="css/estilo.css">
+       <style>
+       @import'https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&display=swap';
+   
+        .cad { /*Informações sobre a caixa rosa*/
+            padding: 50px; /* Defini o espaço/margem que estão dentro do quadrado do dadastro */
+            margin: 0 auto; /*Distancia ou aproxima da página. Essa margem serviu para "centralizar"*/
+            background-color: #937257;
+             /*Cor do fundo do quadrado do cadastro*/
+            height: 500px; /*Altura do quadrado do meu cadastro*/
+            width: 250px; /*largura do quadrado do meu cadastro*/
+            border-radius: 30px; /*Arredonda as bordas*/
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+
+        .cad input{  /*Informações sobre as caixas brancas*/
+            width: 240px;
+            height: 30px;
+            margin-bottom: 10px;/*Dá espaço entre os "botões" (campo) entre os quadrados menores dentro do cadastro*/
+            padding: 5px;
+            background-color: white;
+            border: 1.5px solid rgb(1, 1, 1); /*Características da borda*/
+            border-radius: 10px;
+           
+        }
+        .cad select { /*Informações sobre a caixa branca do "estado"*/
+            width: 240px;
+            height: 30px;
+            margin-bottom: 10px;
+            padding: 5px;
+            background-color: white;
+            border: 1.5px solid rgb(1, 1, 1);
+            border-radius: 10px;
+        }
+        .aceite { /*Informações sobre o quadradinho checkbox e sua classe no html*/
+            margin-top: 5px; /*Define a distância */
+            font-size: 17x; /*tamanho das letras*/
+        }
+
+        .cad .botao { /*Informação sobre o botão enviar*/
+            margin-top: 15px
+        }
+
+        .botao input { /*Informações sobre a caixa rosa*/
+            width: 100%;
+            height: 35px;
+            border: none;
+            background-color: rgb(13, 66, 13);
+            color: white; /*Interfere na cor da letra*/
+            font-weight: bold; /*Característica da letra*/
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="cabe">
+        <div class="logo">
+            <img src="">
+        </div>
+        <div>
+            <ul>
+                <a href="index.html"><li>Início</li></a> 
+                <a href="sobre.html"><li>Sobre Nós</li></a> 
+                <a href="cardapio.html"><li>Cardápio</li></a> 
+                <a href="cadastro.html"><li>Cadastro</li></a>
+            </ul>
+        </div>
+    
+    </div>
+<!--INICIO-->
+
+
+    <form class="cad" action="#" method="post">
+        <div><input type="text" placeholder="Seu nome"></div>
+        <div><input type="email" placeholder="Seu e-mail"></div>
+        <div><input type="text" placeholder="Seu número"></div>
+       
+        <select name="estado">
+            <option value="">Selecione um Estado</option>
+            <option value="bahia">Bahia</option>
+            <option value="minas">Minas Gerais</option>
+            <option value="parana">Paraná</option>
+            <option value="santa_catarina">Santa Catarina</option>
+            <option value="sao_paulo">São Paulo</option>
+        </select>
+
+        <div class="aceite">
+            <input type="checkbox" id="aceite" required>
+            <label id="aceite">Aceito os Termos da South Coffee</label></div>
+       
+        <div class="botao">
+            <input type="submit" value="Enviar">
+               </div>
+    </form>
+ 
+
+<!--FINAL-->
+
+
+    <div class="roda">
+        <br><br><br>
+        
+        <div class="down_up">Café com amor e um toque de cafuné<br>#SOUTHCOFFEE</div>
+        <div class="down_meio">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.30030467103!2d-49.629265824863175!3d-22.902291779258277!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c06a376d221239%3A0x92ee16dc0bc8105f!2zRXNwYcOnbyBDYWbDqQ!5e0!3m2!1spt-BR!2sbr!4v1746642319958!5m2!1spt-BR!2sbr" width="300" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="down_down">
+            <a href="https://pt-br.facebook.com/" target="_blank"><img src="img/face_logo_02.png"></a>
+            <a href="https://web.whatsapp.com/" target="_blank"><img src="img/whats_logo_01.png"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="img/inst_logo_01.png"></a>
+            
+        </div>
+    </div>
+</body>
+</html>
