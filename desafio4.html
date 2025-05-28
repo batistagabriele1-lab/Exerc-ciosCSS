@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esporte SESI - Home</title>
+   <link rel="shortcut icon" href="img/sesi logo.png" type="imge/x -> icon">
+    <style>
+        /* Estilos globais e resets */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box; /* Garante que padding e border não aumentem a largura total */
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        /* ESTILOS DO CABEÇALHO (HEADER) */
+        header {
+            background-color: #b8b6b6;
+            color: rgb(47, 0, 255);
+            padding: 10px 0;
+            display: flex; /* ATENÇÃO AQUI: Torna os itens internos flexíveis (lado a lado) */
+            justify-content: space-between; /* Espalha o logo, menu e ícones sociais */
+            align-items: center; /* Alinha verticalmente os itens no centro */
+            flex-wrap: wrap; /* Permite que o cabeçalho se adapte a telas menores */
+        }
+         .menu ul li:hover{
+            background-color:rgb(255, 255, 0); 
+        }
+
+        header .logo {
+            margin-left: 20px;
+        }
+
+        header .logo img { /* Estilo para a imagem do logo, se houver */
+            max-height: 50px; /* Ajuste conforme o tamanho do seu logo */
+        }
+
+        header nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex; /* ATENÇÃO AQUI: Faz os itens do menu ficarem lado a lado */
+        }
+
+        header nav ul li {
+            margin-right: 20px;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 5px 0; /* Adiciona um pouco de padding para área de clique */
+            display: block; /* Garante que o padding funcione corretamente */
+            font-weight: bold; /* Deixa o texto mais parecido com a imagem */
+        }
+
+        header nav ul li a:hover {
+            color: #007bff; /* Exemplo de hover */
+        }
+
+        .social-icons {
+            margin-right: 20px;
+            display: flex; /* Para alinhar os ícones lado a lado */
+            gap: 10px; /* Espaço entre os ícones */
+        }
+
+        .social-icons img {
+            width: 24px;
+            height: 24px;
+        }
+
+        /* SEÇÃO SUPERIOR COM AS IMAGENS DE DESTAQUE PEQUENAS */
+        .top-section {
+            display: flex; /* Faz as imagens ficarem lado a lado */
+            justify-content: center;
+            gap: 15px; /* Espaçamento entre as imagens */
+            padding: 20px;
+            background-color: #fff;
+            flex-wrap: wrap; /* Permite que as imagens quebrem para a próxima linha em telas menores */
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Sombra para destacar a seção */
+            margin-bottom: 20px;
+        }
+
+        .top-section .item {
+            flex: 1; /* Faz os itens tentarem ocupar o mesmo espaço */
+            min-width: 200px; /* Largura mínima para cada item */
+            max-width: 250px; /* Largura máxima para cada item */
+            text-align: center;
+            overflow: hidden; /* Garante que a imagem não vaze */
+            border-radius: 8px; /* Bordas arredondadas */
+        }
+
+        .top-section img {
+            width: 100%;
+            height: 150px; /* Altura fixa para uniformizar */
+            object-fit: cover; /* Garante que a imagem preencha o espaço sem distorcer */
+            display: block;
+            border-radius: 8px;
+        }
+
+        /* CONTEÚDO PRINCIPAL (NOTÍCIAS E COLUNA) */
+        .main-content {
+            display: flex; /* Faz as seções de notícias e coluna ficarem lado a lado */
+            gap: 20px; /* Espaço entre as seções */
+            padding: 0 20px 20px 20px; /* Padding para as laterais */
+            flex-wrap: wrap; /* Permite que as seções quebrem para a próxima linha em telas menores */
+        }
+
+        .news-section {
+            flex: 2; /* A seção de notícias ocupa o dobro do espaço da coluna */
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            min-width: 300px; /* Largura mínima para a seção de notícias */
+        }
+
+        .news-section h2, .column-section h2, .sport-category h3 {
+            color: #555;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            font-size: 1.8em; /* Tamanho do título */
+        }
+
+        .featured-news {
+            display: flex; /* Faz a imagem principal e as pequenas notícias ficarem lado a lado */
+            flex-direction: column; /* Começa com coluna para a imagem principal */
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        /* Ajuste para a imagem principal e as pequenas noticias ficarem mais próximas do layout original */
+        .featured-news .news-main-image {
+            width: 100%;
+            height: auto;
+            max-height: 400px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        /* Se for para ter as 4 imagens pequenas abaixo da principal */
+        .news-minor-cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: space-between; /* Para espaçar as 4 imagens menores */
+        }
+
+        .news-minor-cards .news-card {
+            flex: 1;
+            min-width: 100px; /* Largura mínima para as notícias menores */
+            max-width: calc(50% - 7.5px); /* Duas colunas com gap */
+            text-align: center;
+        }
+
+        .news-minor-cards .news-card img {
+            width: 100%;
+            height: 100px; /* Altura fixa para as notícias menores */
+            object-fit: cover;
+            border-radius: 4px;
+        }
+
+
+        .news-text {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .column-section {
+            flex: 1; /* A seção da coluna ocupa uma porção menor */
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            min-width: 280px; /* Largura mínima para evitar que encolha demais */
+        }
+
+        .column-section img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+        .column-section p {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+
+        /* SEÇÃO DE CATEGORIAS DE ESPORTES (BASQUETE, VOLEI, ETC.) */
+        .sport-categories {
+            display: flex; /* Faz as categorias ficarem lado a lado */
+            justify-content: center; /* Centraliza as categorias */
+            gap: 20px;
+            padding: 20px;
+            flex-wrap: wrap; /* Permite que as categorias quebrem em telas menores */
+        }
+
+        .sport-category {
+            flex: 1;
+            min-width: 200px;
+            max-width: 280px;
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            text-align: center;
+            overflow: hidden; /* Garante que a imagem não vaze */
+        }
+
+        .sport-category img {
+            width: 100%;
+            height: 150px; /* Altura fixa para as imagens das categorias */
+            object-fit: cover; /* Garante que a imagem preencha o espaço sem distorcer */
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+
+        .sport-category h3 {
+            color: #333;
+            margin-top: 0;
+        }
+
+        /* RODAPÉ (FOOTER) */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 30px;
+            font-size: 0.9em;
+        }
+        
+
+        /* Media Queries para responsividade básica (opcional, mas bom para telas pequenas) */
+        @media (max-width: 768px) {
+            header, .main-content, .top-section, .sport-categories {
+                flex-direction: column; /* Empilha os itens em telas menores */
+                align-items: center; /* Centraliza os itens empilhados */
+            }
+
+            header nav ul {
+                flex-direction: column; /* Empilha o menu em telas menores */
+                margin-top: 10px;
+                width: 100%;
+                text-align: center;
+            }
+            header nav ul li {
+                margin: 5px 0;
+            }
+
+            .main-content, .top-section, .sport-categories {
+                padding: 10px; /* Reduz o padding em telas menores */
+            }
+
+            .news-section, .column-section, .top-section .item, .sport-category {
+                min-width: 90%; /* Ocupa quase toda a largura em telas menores */
+                max-width: 90%;
+            }
+            .news-minor-cards .news-card {
+                max-width: 100%; /* Uma coluna para as notícias menores em telas muito pequenas */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="https://www.sesisp.org.br/"><img src="img/sesi logo.png" alt="logo" width="150"></a>
+        </div>
+        <nav class="menu">
+            <ul>
+                <li>HOME</li>
+                <li>LAZER</li>
+                <li>ESPORTES</li>
+                <li>CORRIDAS</li>
+                <li>E-SPORTS</li>
+            </ul>
+        </nav>
+        <div class="social-icons">
+            <a href="https://web.whatsapp.com/"><img src="img/whats_logo_01.png" alt="WhatsApp"></a>
+            <a href="https://pt-br.facebook.com/"><img src="img/face_logo_02.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com/"><img src="img/inst_logo_01.png" alt="Instagram"></a>
+        </div>
+    </header>
+<br><br>
+    <main class="main-content">
+        <section class="news-section">
+            <h2>Notícias</h2>
+            <div class="featured-news">
+                <img src="img/sesi em movimento.jpg" alt="SESI em Movimento" class="news-main-image">
+
+            
+
+            </div>
+            <p class="news-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores commodi quis laboriosam, nam aspernatur dicta maxime, aperiam doloremque tenetur explicabo, dolore a excepturi? Sint repellat enim blanditiis atque, minus?</p>
+            <p class="news-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores commodi quis laboriosam, nam aspernatur dicta maxime, aperiam doloremque tenetur explicabo, dolore a excepturi? Sint repellat enim blanditiis atque, minus?</p>
+            <p class="news-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores commodi quis laboriosam, nam aspernatur dicta maxime, aperiam doloremque tenetur explicabo, dolore a excepturi? Sint repellat enim blanditiis atque, minus?</p>
+            <p class="news-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores commodi quis laboriosam, nam aspernatur dicta maxime, aperiam doloremque tenetur explicabo, dolore a excepturi? Sint repellat enim blanditiis atque, minus?</p>
+            <p class="news-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores commodi quis laboriosam, nam aspernatur dicta maxime, aperiam doloremque tenetur explicabo, dolore a excepturi? Sint repellat enim blanditiis atque, minus?</p>
+            <p class="news-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores commodi quis laboriosam, nam aspernatur dicta maxime, aperiam doloremque tenetur explicabo, dolore a excepturi? Sint repellat enim blanditiis atque, minus?</p>
+        </section>
+
+        <aside class="column-section">
+            <h2>Coluna</h2>
+            <img src="img/velho.jpg" alt="Foto do Colunista">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores commodi quis laboriosam, nam aspernatur dicta maxime, aperiam doloremque tenetur explicabo, dolore a excepturi? Sint repellat enim blanditiis atque, minus?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores commodi quis laboriosam, nam aspernatur dicta maxime, aperiam doloremque tenetur explicabo, dolore a excepturi? Sint repellat enim blanditiis atque, minus?</p>
+        </aside>
+    </main>
+<hr>
+    <section class="sport-categories">
+        <div class="sport-category">
+            <h3>Basquete</h3>
+            <img src="img/BASQUETE.jfif" alt="Basquete">
+        </div>
+        <div class="sport-category">
+            <h3>Volei</h3>
+            <img src="img/VOLEI.jpg" alt="Volei">
+        </div>
+        <div class="sport-category">
+            <h3>Judo</h3>
+            <img src="img/JUDO.jpg" alt="Judo">
+        </div>
+        <div class="sport-category">
+            <h3>Futebol</h3>
+            <img src="img/FUTEBOL.jpeg" alt="Futebol">
+        </div>
+    </section>
+
+    <footer>
+        <p>© Jornal Bella Nora - Tec. Multimídia - SENAI-SP</p>
+    </footer>
+
+</body>
+</html>
