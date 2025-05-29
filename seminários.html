@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Geral</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            max-width: 700px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+            font-size: 2em;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #555;
+        }
+        .input-field {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box; /* Include padding in width */
+            font-size: 1em;
+        }
+        .row {
+            display: flex;
+            gap: 20px; /* Space between columns */
+            margin-bottom: 20px;
+        }
+        .row > div {
+            flex: 1; /* Distribute space equally */
+        }
+        .half-width {
+            flex: 0 0 calc(50% - 10px); /* For Nome and Sobrenome */
+        }
+        .third-width {
+            flex: 0 0 calc(33.333% - 13.333px); /* For Cidade, Estado, CEP */
+        }
+        .small-text {
+            font-size: 0.85em;
+            color: #777;
+            margin-top: 5px;
+        }
+        .radio-group label, .checkbox-group label {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            font-size: 1em;
+            color: #555;
+        }
+        .radio-group input[type="radio"], .checkbox-group input[type="checkbox"] {
+            margin-right: 10px;
+            /* Custom styling for radio buttons to match the image */
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            width: 18px;
+            height: 18px;
+            border: 2px solid #ccc;
+            border-radius: 50%;
+            outline: none;
+            cursor: pointer;
+            position: relative;
+            top: -1px; /* Adjust vertical alignment */
+        }
+        .radio-group input[type="radio"]:checked {
+            border-color: #6EE7B7; /* Accent color */
+        }
+        .radio-group input[type="radio"]:checked::before {
+            content: '';
+            display: block;
+            width: 10px;
+            height: 10px;
+            background-color: #6EE7B7; /* Fill color */
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .checkbox-group input[type="checkbox"] {
+            border-radius: 3px; /* Square for checkbox */
+        }
+        .checkbox-group input[type="checkbox"]:checked {
+            background-color: #007bff; /* Example blue for checked checkbox */
+            border-color: #007bff;
+        }
+        .checkbox-group input[type="checkbox"]:checked::before {
+            content: '\2713'; /* Checkmark character */
+            color: white;
+            font-size: 14px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .file-upload-group {
+            display: flex;
+            align-items: center;
+        }
+        .file-upload-group input[type="file"] {
+            display: none; /* Hide default file input */
+        }
+        .file-upload-input-display {
+            flex-grow: 1;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f8f8f8;
+            cursor: pointer;
+            color: #555;
+        }
+        .browse-button {
+            background-color: #e0e0e0;
+            color: #333;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-left: 10px;
+            white-space: nowrap; /* Prevent text wrapping */
+        }
+        .browse-button:hover {
+            background-color: #d0d0d0;
+        }
+        .submit-button {
+            background-color: #007bff; /* Blue as seen in the image */
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.1em;
+            width: 100%;
+            box-sizing: border-box;
+            margin-top: 20px;
+        }
+        .submit-button:hover {
+            background-color: #0056b3;
+        }
+        <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Geral</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white; /* Fundo da página branco */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .container {
+            /* O gradiente agora será aplicado aqui, no lugar do fundo branco */
+            background: linear-gradient(to right, #6EE7B7, #98EECC); /* Gradiente no formulário */
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            max-width: 700px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+            font-size: 2em;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #555;
+        }
+        .input-field {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box; /* Include padding in width */
+            font-size: 1em;
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>CADASTRO GERAL</h1>
+
+        <form>
+            <div class="row">
+                <div class="half-width">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" class="input-field">
+                </div>
+                <div class="half-width">
+                    <label for="sobrenome">Sobrenome</label>
+                    <input type="text" id="sobrenome" class="input-field">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="third-width">
+                    <label for="cidade">Cidade</label>
+                    <input type="text" id="cidade" class="input-field">
+                </div>
+                <div class="third-width">
+                    <label for="estado">Estado</label>
+                    <input type="text" id="estado" class="input-field">
+                </div>
+                <div class="third-width">
+                    <label for="cep">CEP</label>
+                    <input type="text" id="cep" class="input-field">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Seu email</label>
+                <input type="email" id="email" class="input-field">
+                <p class="small-text">Nunca vamos compartilhar seu email, com ninguém.</p>
+            </div>
+
+            <div class="form-group radio-group">
+                <label>
+                    <input type="radio" name="plano" value="basico" checked>
+                    PLANO BÁSICO
+                </label>
+                <label>
+                    <input type="radio" name="plano" value="intermediario">
+                    PLANO INTERMEDIÁRIO
+                </label>
+                <label>
+                    <input type="radio" name="plano" value="completo">
+                    PLANO COMPLETO
+                </label>
+            </div>
+
+            <div class="form-group">
+                <label for="foto">Selecione uma Foto</label>
+                <div class="file-upload-group">
+                    <input type="file" id="foto" accept="image/*">
+                    <div class="input-field file-upload-input-display" id="file-name-display"></div>
+                    <button type="button" class="browse-button" onclick="document.getElementById('foto').click()">Browse</button>
+                </div>
+            </div>
+
+            <div class="form-group checkbox-group">
+                <label>
+                    <input type="checkbox" id="termos">
+                    Aceito os termos e condições
+                </label>
+            </div>
+
+            <button type="submit" class="submit-button">Enviar</button>
+        </form>
+    </div>
+
+    <script>
+        // Update the file input display with the selected file name
+        document.getElementById('foto').addEventListener('change', function() {
+            var fileName = this.files
