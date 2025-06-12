@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loja Estilo Nike</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body, html { height: 100%; font-family: sans-serif; scroll-behavior: smooth; }
+
+    .hero {
+      height: 100vh;
+      background: url('https://www.nike.com.br/Arquivos/Nike_Banner.jpg') no-repeat center center/cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      animation: moveBackground 20s linear infinite;
+    }
+
+    @keyframes moveBackground {
+      0% { background-position: center top; }
+      50% { background-position: center bottom; }
+      100% { background-position: center top; }
+    }
+
+    .hero button {
+      padding: 20px 40px;
+      font-size: 1.5rem;
+      background-color: black;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    .menu {
+      display: flex;
+      justify-content: space-around;
+      padding: 1rem;
+      background-color: #111;
+      color: white;
+    }
+
+    .carousel {
+      width: 100%;
+      padding: 2rem 0;
+    }
+
+    .grid-fotos {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+      padding: 2rem;
+    }
+
+    .grid-fotos div {
+      background: #eee;
+      height: 200px;
+    }
+
+    .produtos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 2rem;
+    }
+
+    .produto {
+      width: 200px;
+      text-align: center;
+    }
+
+    .produto img {
+      width: 100%;
+      height: auto;
+    }
+
+    .produto p {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <section class="hero">
+    <button onclick="window.location.href='#pagina2'">Entrar</button>
+  </section>
+
+  <section id="pagina2">
+    <div class="menu">
+      <span>Home</span>
+      <span>Produtos</span>
+      <span>Contato</span>
+    </div>
+
+    <div class="carousel swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="https://via.placeholder.com/800x300?text=Slide+1" alt="Slide 1"></div>
+        <div class="swiper-slide"><img src="https://via.placeholder.com/800x300?text=Slide+2" alt="Slide 2"></div>
+        <div class="swiper-slide"><img src="https://via.placeholder.com/800x300?text=Slide+3" alt="Slide 3"></div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <div class="grid-fotos">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+
+    <div class="produtos">
+      <div class="produto">
+        <img src="https://via.placeholder.com/200x250" alt="Produto 1">
+        <p>R$ 299,90</p>
+      </div>
+      <div class="produto">
+        <img src="https://via.placeholder.com/200x250" alt="Produto 2">
+        <p>R$ 349,90</p>
+      </div>
+      <div class="produto">
+        <img src="https://via.placeholder.com/200x250" alt="Produto 3">
+        <p>R$ 399,90</p>
+      </div>
+      <div class="produto">
+        <img src="https://via.placeholder.com/200x250" alt="Produto 4">
+        <p>R$ 449,90</p>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script>
+    new Swiper('.swiper', {
+      loop: true,
+      pagination: { el: '.swiper-pagination' },
+    });
+  </script>
+</body>
+</html>
